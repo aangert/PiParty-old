@@ -198,6 +198,7 @@ class Audio:
         #buf = io.BytesIO()
         #segment.export(buf, 'wav')
         #buf.seek(0)
+        pygame.mixer.init()
         self.sample_ = pygame.mixer.Sound(file=fname)
         self.fname_ = fname
 
